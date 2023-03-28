@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BmiCompute</class>
+ <widget class="QDialog" name="BmiCompute">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BMI计算程序</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	color:blue;
+	font-size:15px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="8,2,1">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="7,3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>请输入体重(kg):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_weight"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>请输入身高(cm):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_stature"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>计算BMI</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">*{
+	font-size: 10px;
+	background-color:rgb(234, 255, 5);
+}</string>
+         </property>
+         <property name="text">
+          <string>我国体重指数正常范围是18.5～24千克/米²。
+
+体重指数是国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。体重指数的公式为：体重指数（BMI）=体重（千克）/身高²（米²）。我国体重指数范围的意义：BMI＜18.5千克/米²为体重过低；18.5千克/米²≤BMI＜24千克/米²为正常；24千克/米²≤BMI＜28千克/米²为超重；BMI≥28千克/米²为肥胖。世界卫生组织把超重界定为体重指数等于或大于25千克/米²，肥胖界定为体重指数等于或大于30千克/米²。</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_result">
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color:rgb(255, 170, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>您的计算结果是：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_warning">
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color:rgb(255, 170, 255);
+	color:red;
+}</string>
+       </property>
+       <property name="text">
+        <string>BMI:26,属于超重，您的理想体重是68kg</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
