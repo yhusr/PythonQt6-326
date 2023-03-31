@@ -3,7 +3,7 @@ import random
 
 def generate_number():
     # 需要生成的考生数量
-    total_num = 360000
+    total_num = 1000000
     bean = 0
     # 省份和学校
     province = 10

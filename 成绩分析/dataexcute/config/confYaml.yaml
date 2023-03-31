@@ -1,7 +1,0 @@
-mysql:
-  host: 192.168.10.136
-  user: exam_score_statistic_test
-  password: exam_score_statistic_test
-  port: 3307
-  db: exam_score_statistic_test
-  sql: SELECT project.start_score FROM ess_course as course LEFT JOIN ess_project_course as project ON course.id = project.course_id where course.name =%s
